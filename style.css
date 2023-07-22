@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#pg-content {
+    background-color: #cccccc;
+}
+
+.content-container {
+    max-width: 80%;
+    width: 800px;
+    border: dotted 1px fuchsia;
+    box-sizing: border-box;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************************************|******************/
+/* v v v v v v v v v v v v v v v  \\ | //              */
+/* > Start Header Styles > > > > v \\|// v v v v v  v  */
+/* > v > v > v > v > v > v > v > v  \V/                */
+#pg-sticky-header {
+    background-color: pink;
+    font-family: cursive;
+    color: olive;
+    min-height: 52px;
+    max-height: 50vw;
+    overflow-y: auto;
+    /* font-weight: 100; */
+    
+}
+
+#header-content {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#malarky-link {
+    padding: 0.5em 1em;
+    background-color: cyan;
+    color: orangered;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+    opacity: 0.75;
+    box-shadow: 3px 1.8px 4px 3px limegreen;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+#malarky-link:hover {
+    opacity: 0.9;
+    box-shadow:
+        0px 0px 4px 2px lime,
+        -1px -1px 5px 10px rgba(140, 255, 140, 0.5),
+        0px 0px 8px 3px #1d1d1d;
+}
+#malarky-link:active {
+    opacity: 1;
+    box-shadow:
+        0px 0px 3px 3px rgba(140, 255, 140, 0.5),
+        0px 0px 3px 1px #1d1d1d;
+}
+
+#header-content > p {
+    display: inline;
+}
+
+#header-content > p > strong {
+    color: lime;
+    background-color: black;
+}
+
+/* ^ ^ ^ ^ ^ ^ ^ ^ ^    ^/^   ^ ^ ^ ^ ^ ^ */
+/*  ^   ^   ^   ^   ^  / /     ^   ^   ^  */
+/*  HEADER STYLES  ===~'/     */
+/* /end */
+/****************************************************************************/
+
+#pg-main-content {
+    font-size: 1.2rem;
+    background-color: #555599;
+    color: #ffff00;
+}
+
+#blue-block {
+    background-color: blue;
+    height: calc(500px - 20vw);
+    width: calc(500px - 20vw);
+    /* width: 30%; */
+    display: inline-block;
+    margin: 1em;
+}
+
+#pg-main-content .main-text {
+    font-family: monospace;
+}
+#pg-main-content h1.main-text,
+#pg-main-content h2.main-text,
+#pg-main-content h3.main-text,
+#pg-main-content h4.main-text,
+#pg-main-content h5.main-text {
+    font-weight: bold;
+    box-shadow:
+        0 -4px 7px 3px #fff,
+        0 4px 6px 4px aquamarine;
+    border-bottom: solid 2px aquamarine;
+}
+
+#pg-main-content p.main-text {
+    color: aquamarine;
+    background-color: rgba(211, 37, 37, 0.781);
+    color: rgba(1, 6, 6);
+}
+
+#pg-main-content p.main-text:not(:last-child) {
+    margin: 0 0 1em;
+}
