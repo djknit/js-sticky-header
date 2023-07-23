@@ -48,7 +48,7 @@ function setSpacerHeight(height) {
     headerEl.css('position', 'fixed');
     spacerEl.prop(
         'style',
-        'display:block!important; position:static!important; width:auto:!important; height:' + height + 'px!important; max-height:' + height + 'px!important;'
+        `display:block!important; position:static!important; width:auto:!important; height:${height}px!important; max-height:${height}px!important;`
     );
 }
 
