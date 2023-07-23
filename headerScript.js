@@ -1,5 +1,5 @@
-const HEADER_ID = 'pg-sticky-header';
-const SPACER_ID = 'pg-sticky-head-spacer';
+const HEADER_CLASS = 'djknit-sticky-header';
+const SPACER_CLASS = 'djknit-sticky-head-spacer';
 
 $(document).ready(function() { 
     runMeasuringProcess(50, 2000);
@@ -30,12 +30,12 @@ function runMeasuringProcess(tries, waitTime) {
     }
 }
 
-function getJqueryFor(elId) {
-    return $('#' + elId);
+function getJqueryFor(elClass) {
+    return $('.' + elClass);
 }
 
 function getHeaderHeight() {
-    const headerEl = getJqueryFor(HEADER_ID);
+    const headerEl = getJqueryFor(HEADER_CLASS);
     if (headerEl && headerEl.outerHeight) {
         return headerEl.outerHeight(false);
     }
@@ -43,8 +43,8 @@ function getHeaderHeight() {
 
 function setSpacerHeight(height) {
     if (!height)return;
-    const spacerEl = getJqueryFor(SPACER_ID);
-    const headerEl = getJqueryFor(HEADER_ID);
+    const spacerEl = getJqueryFor(SPACER_CLASS);
+    const headerEl = getJqueryFor(HEADER_CLASS);
     headerEl.css('position', 'fixed');
     spacerEl.prop(
         'style',
@@ -53,8 +53,8 @@ function setSpacerHeight(height) {
 }
 
 function resetStyles() {
-    const spacerEl = getJqueryFor(SPACER_ID);
-    const headerEl = getJqueryFor(HEADER_ID);
+    const spacerEl = getJqueryFor(SPACER_CLASS);
+    const headerEl = getJqueryFor(HEADER_CLASS);
     headerEl.prop('style', 'width:100%;');
     spacerEl.prop('style', 'display:none;');
 }

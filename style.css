@@ -22,7 +22,7 @@ body {
 /* v v v v v v v v v v v v v v v  \\ | //              */
 /* > Start Header Styles > > > > v \\|// v v v v v  v  */
 /* > v > v > v > v > v > v > v > v  \V/                */
-#pg-sticky-header {
+#index-header {
     background-color: pink;
     font-family: cursive;
     color: olive;
@@ -30,7 +30,15 @@ body {
     max-height: 50vw;
     overflow-y: auto;
     /* font-weight: 100; */
-    
+}
+
+#malarky-header {
+    line-height: 30px;
+    padding: 0;
+    height: 30px;
+    overflow-y: hidden;
+    background-color: #555599;
+    color: yellow;
 }
 
 #header-content {
@@ -117,4 +125,12 @@ body {
 
 #pg-main-content p.main-text:not(:last-child) {
     margin: 0 0 1em;
+}
+
+p.main-text {
+    color:rgba(211, 37, 37, 0.781);
+    background-color: aquamarine;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
 }
